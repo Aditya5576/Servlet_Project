@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style type="text/css">
+#maindiv {
+	display: flex;
+	justify-content: center;
+	margin: 20px;
+	padding: 20px;
+}
+
+#childdiv {
+	border: 2px solid blue;
+	border-radius: 50px;
+	width: 270px;
+	padding: 50px;
+}
+
+#customerlogin {
+	color: red;
+	text-decoration: none;
+}
+</style>
+</head>
+<body>
+	<div id="maindiv">
+		<div id="childdiv">
+			<form action='admin-login' method="post">
+				<h2>Hotel Admin Login</h2>
+				<label>E-mail Id:</label> <input type="email" name="email"
+					style='margin-top: 10px'> <br> <label>Password:</label>
+				<input type="password" name="password"
+					style='margin-top: 20px; margin-bottom: 20px;'> <br> <a href="hotel-home"><input
+					type="submit"></a> <input type="reset"> <br> <br>
+				<a href="cust-login" id="hotellogin">Click here to Login as
+					Customer</a>
+			</form>
+		</div>
+	</div>
+
+</body>
+</html>

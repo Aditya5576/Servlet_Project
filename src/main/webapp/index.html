@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style type="text/css">
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+nav {
+	height: 100px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	background-color: #95D2B3;
+	box-shadow: 0px 0px 20px black;
+}
+
+h1 {
+	color: #003285;
+	margin-left: 200px;
+	font-size: 30px;
+}
+
+button {
+	height: 40px;
+	width: 90px;
+	border-radius: 10px;
+	background-color: #D8EFD3;
+	box-shadow: 0px 0px 10px black;
+	color: black;
+	font-size: 20px;
+	border: none;
+	position: relative;
+	left: 150px;
+}
+
+button:hover {
+	transform: scale(1.1	);
+	transition-property: all;
+	transition-timing-function: ease-in-out;
+	transition-duration: 0.5s;
+	box-shadow: 0px 0px 10px greenyellow;
+/*transition: all 0.3s;*/
+	color: #55AD9B;
+	cursor: pointer;
+	border: none;
+}
+
+.login {
+	margin-left: 200px;
+}
+
+.signup {
+	margin-left: 150px;
+}
+</style>
+</head>
+<body>
+	<nav>
+		<h1>Welcome to Flavour-Heaven!!</h1>
+		<a href="cust-login"><button class="login">Login</button></a> <a
+			href="cust-signup"><button class="signup">Signup</button></a>
+
+	</nav>
+
+</body>
+</html>

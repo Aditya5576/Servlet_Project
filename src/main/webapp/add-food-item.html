@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Add Food Item</title>
+		<style>
+	* {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+.main{
+	border: 2px solid red;
+	border-radius: 10px;
+	height: 400px;
+	width: 500px;
+	padding: 20px;
+	background-color: rgb(255, 255, 255);
+	box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.8);
+	margin-top: 200px;
+	margin-left: 500px;
+	margin-bottom: 100px;
+	margin-right: 400px;
+
+}
+
+
+</style>
+	</head>
+	<body>
+		<div align="center" class="main">
+			<h1>Enter Food Details</h1><br><br>ss
+			<form action="add-food-item" method="post"
+				enctype="multipart/form-data">
+				Name:<input type="text" name="name"><br><br> Cost:<input
+					type="text" name="price"><br> Type:<input type="radio"
+					name="type" value="veg">VEG<input type="radio" name="type"
+					value="non-veg">NON-VEG<br> Stock :<input type="number"
+					name="stock"><br> Picture :<input type="file"
+					name="image"><br>
+				<button>Add</button>
+			</form>
+		</div>
+	</body>
+</html>
