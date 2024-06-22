@@ -31,7 +31,7 @@ public class HotelLoginServ extends HttpServlet {
 		if (list.isEmpty()) {
 			resp.getWriter().print("<h1 align='center' style='color:red'>Invalid Email</h1>");
 			req.getRequestDispatcher("admin-login.html").include(req, resp);
-		} else if (password.equals(list.get(0).getPassword())) {
+		} else if (password.equals(AES.decrypt(list.get(0).getPassword(),"123"))) {
 			req.getSession().setAttribute("hotel", list.get(0));	
 			resp.getWriter().print("<h1 align='center' style='color:green'>Login Success</h1>");
 			req.getRequestDispatcher("hotel-home.html").include(req, resp);

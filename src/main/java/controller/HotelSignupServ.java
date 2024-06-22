@@ -38,7 +38,7 @@ public class HotelSignupServ extends HttpServlet {
 			hotel.setGst(gst);
 			hotel.setMobile(mobile);
 			hotel.setName(name);
-			hotel.setPassword(password);
+			hotel.setPassword(AES.encrypt(password, "123"));
 
 			dao.saveHotel(hotel);
 

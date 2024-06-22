@@ -34,7 +34,7 @@ public class CustLoginServ extends HttpServlet {
 			req.getRequestDispatcher("cust-login.html").include(req, resp);
 		} else if (password.equals(list.get(0).getPassword())) {
 			resp.getWriter().print("<h1 align='center' style='color:green'>Login Success</h1>");
-			req.getRequestDispatcher("Home.html").include(req, resp);
+			req.getRequestDispatcher("hotel-hotel.html").include(req, resp);
 		} else {
 			resp.getWriter().print("<h1 align='center' style='color:red'>Invalid Password</h1>");
 			req.getRequestDispatcher("cust-login.html").include(req, resp);
