@@ -31,10 +31,12 @@
 			<tr>
 				<td><%=item.getName()%></td>
 				<td><%=item.getStock()%></td>
-				<td><img src="data:image/jpeg;base64,<%=Base64.encodeBase64String(item.getPicture()) %>" alt="<%=item.getName()%>" height="150px" width="190px"></td>
+				<td><img
+					src="data:image/jpeg;base64,<%=Base64.encodeBase64String(item.getPicture())%>"
+					alt="<%=item.getName()%>" height="150px" width="190px"></td>
 				<td><%=item.getPrice()%></td>
 				<td><%=item.getHotel().getName()%></td>
-				<td><button>Edit</button></td>
+				<td>a<a href="edit-food-item?id=<%=item.getId()%>"><button>Edit</button></a></td>
 				<td><a href="delete-food-item?id=<%=item.getId()%>"><button>Delete</button></a></td>
 			</tr>
 			<%

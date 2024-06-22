@@ -53,7 +53,19 @@ public class MyDao {
 		transaction.commit();
 	}
 
+	public void editFoodItem(FoodItem foodItem) {
+		transaction.begin();
+		manager.remove(foodItem);
+		transaction.commit();
+	}
+
 	public FoodItem fetchFoodById(int id) {
 		return manager.find(FoodItem.class, id);
+	}
+
+	public void updateFoodItem(FoodItem foodItem) {
+		transaction.begin();
+		manager.merge(foodItem);
+		transaction.commit();
 	}
 }

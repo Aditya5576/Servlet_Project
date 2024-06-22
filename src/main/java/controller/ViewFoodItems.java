@@ -33,7 +33,7 @@ public class ViewFoodItems extends HttpServlet {
 
 		} else {
 			resp.getWriter().print("<h1 align='center' style='color:red'>Invalid Session</h1>");
-			req.getRequestDispatcher("hotel-login.html").include(req, resp);
+			req.getRequestDispatcher("admin-login.html").include(req, resp);
 		}
 	}
 }

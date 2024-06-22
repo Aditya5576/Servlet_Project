@@ -28,4 +28,7 @@ public class FoodItem {
 	@ManyToOne
 	Hotel hotel;
 
-}
+	
+	}
+
+
